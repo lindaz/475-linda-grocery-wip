@@ -265,6 +265,7 @@ app.post('/addgrocery', isLoggedIn, function(req, res){
 
 app.put('/addgrocery', grocery_controller.addGrocery);
 
+app.get('/deleteGrocery/:id', grocery_controller.deleteGrocery);
 app.get('/getGrocerylist', grocery_controller.getGroceries);
 
 
